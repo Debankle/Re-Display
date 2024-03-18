@@ -1,5 +1,5 @@
 [Unit]
-Description=Re:Display Display Manager
+Description=Re:Display - a simple Display Manager
 After=systemd-user-sessions.service plymouth-quit-wait.service
 After=getty@tty2.service
 

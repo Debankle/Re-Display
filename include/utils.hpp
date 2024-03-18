@@ -25,6 +25,6 @@ class Session {
     bool valid_session_file();
     void parse_session();
 
-}
+};
 
 #endif // UTILS_REDISPLAY_HPP

@@ -14,7 +14,11 @@ int main() {
 
     switch_tty();
 
-    while(1) {}
+    while(1) {
+        std::string input;
+        std::cin >> input;
+        std::cout << input << std::endl;
+    }
 
     return 0;
 }
