@@ -6,6 +6,8 @@ A custom crafted Display Manager
 
 This is a display manager I am coding to use for myself. It is being designed for Arch Linux with Hyprland, and for the moment is only being tested on that.
 
+Heavily inspired by ly, and taking concepts from other display managers. ly was being problematic with my hyprland sessions, so I decided to try and solve this (it's not going to work).
+
 
 Work to do:
 
