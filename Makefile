@@ -1,6 +1,6 @@
 NAME = re-display
 CC = g++
-FLAGS = --std=c++17 -g 
+FLAGS = --std=c++17 -g  -O2
 FLAGS+= -pedantic -Wall -Wextra -Werror
 
 OBJD = obj
