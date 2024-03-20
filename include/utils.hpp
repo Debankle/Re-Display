@@ -12,19 +12,4 @@
 std::string get_hostname(std::string file);
 std::list<std::string> get_sessions();
 
-class Session {
-  public:
-    Session(std::string session_file);
-    void begin_session();
-
-  private:
-    std::string name;
-    std::string exec;
-    std::string type;
-
-    bool valid_session_file();
-    void parse_session();
-
-};
-
 #endif // UTILS_REDISPLAY_HPP
