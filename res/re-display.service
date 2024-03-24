@@ -1,14 +1,17 @@
 [Unit]
 Description=Re:Display - a simple Display Manager
-After=systemd-user-sessions.service plymouth-quit-wait.service
-After=getty@tty2.service
+After=systemd-user-sessions.service plymouth-quit-wait.service getty@tty2.service systemd-logind.service
+Before=display-manager.service
+Conflicts=getty@tty2.service
 
 [Service]
-Type=idle
+Type=simple
 ExecStart=/usr/bin/re-display
 StandardInput=tty
 TTYPath=/dev/tty2
 TTYReset=yes
+Restart=always
+Environment=
 
 [Install]
 Alias=display-manager.service
